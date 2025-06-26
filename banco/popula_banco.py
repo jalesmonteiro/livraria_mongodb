@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-json_path = os.Path("banco").joinpath("livros.json")
+json_path = os.path.join("banco", "livros.json")
 with open(json_path, "r", encoding="utf-8") as file:
     livros = json.load(file)
 
